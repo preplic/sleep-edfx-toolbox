@@ -8,8 +8,8 @@ function [lights_off_times] = convertXLSData(destination_dir)
 
 
 
-Y_SC = xlsread(fullfile(pwd, destination_dir, 'SC-subjects.xls'));
-Y_ST = xlsread(fullfile(pwd, destination_dir, 'ST-subjects.xls'));
+Y_SC = xlsread(fullfile(destination_dir, 'SC-subjects.xls'));
+Y_ST = xlsread(fullfile(destination_dir, 'ST-subjects.xls'));
 
 lights_off_times = containers.Map;
 

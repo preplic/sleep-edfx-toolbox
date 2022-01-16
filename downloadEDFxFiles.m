@@ -117,7 +117,7 @@ if mode == 'h'
         urlwrite(url_of_file_SC, path_of_file_SC);
         urlwrite(url_of_file_ST, path_of_file_ST);
     else 
-        fprintf('\Copying annotations spreadsheet...\n')
+        fprintf('\nCopying annotations spreadsheet...\n')
         url_of_file_SC = fullfile(base_files_url, 'SC-subjects.xls');
         url_of_file_ST = fullfile(base_files_url, 'ST-subjects.xls');
         copyfile(url_of_file_SC, path_of_file_SC);
@@ -129,7 +129,7 @@ end
 if strcmp(src_dir, '')
     fprintf('\nDownload complete!\n')
 else
-    fprintf('\Copy of files complete!\n')
+    fprintf('\nCopy of files complete!\n')
 end
 
 end
